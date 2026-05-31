@@ -1,6 +1,6 @@
 {
   "name": "@wbc-ui/alert2",
-  "version": "1.0.0-r14",
+  "version": "1.0.0-r15",
   "description": "Floating debug/alert panel for the @wbc-ui ecosystem",
   "main": "dist/alert2.umd.js",
   "module": "dist/alert2.es.js",
@@ -17,8 +17,8 @@
   "peerDependencies": {
     "vue": "^2.7.16",
     "vuetify": "^2.7.2",
-    "@wbc-ui/core2": "1.0.0-r14",
-    "@wbc-ui/dataviewer2": "1.0.0-r14"
+    "@wbc-ui/core2": "1.0.0-r15",
+    "@wbc-ui/dataviewer2": "1.0.0-r15"
   },
   "repository": {
     "type": "git",
