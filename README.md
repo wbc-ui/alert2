@@ -15,9 +15,20 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/wbc-ui/alert2">📘 Docs</a> ·
   <a href="https://github.com/wbc-ui/alert2">🐙 GitHub</a> ·
   <a href="https://wbc-ui.com">💎 Pro</a>
+</p>
+
+<p align="center">
+  <img src="./assets/hero-alert-panel.webp"
+       alt="@wbc-ui/alert2 — data-driven notification panel for Vue"
+       width="780"/>
+</p>
+
+<p align="center">
+  <img src="./assets/mermaid-architecture.png"
+       alt="Architecture diagram"
+       width="680"/>
 </p>
 
 ---
@@ -57,7 +68,7 @@ A **Vue 2.7+ component** — `<WBAlert>` — that renders a notification panel f
 
 ---
 
-## Teasing Examples
+## Usage Examples
 
 ### Level 1 — A single alert
 ```html
@@ -129,6 +140,23 @@ Vue.use(WBAlertPlugin);
 | Alerts render unstyled | Vuetify CSS isn't loaded | Import once in `main.js`: `import 'vuetify/dist/vuetify.min.css';` |
 | `WBAlert is not a registered component` | Plugin not installed | `Vue.use(WBAlertPlugin)`, or import `{ WBAlert }` and register locally. |
 | `WBC is not registered` (WBC usage) | `@wbc-ui/core2` not registered | `Vue.use(wbcCore)` before using `<WBC>`. |
+
+---
+
+## ⚡ The Component Under the Hood
+
+<details>
+<summary>Mermaid diagram (interactive fallback)</summary>
+<p align="center">
+  <img src="./assets/mermaid-under-the-hood.png"
+       alt="Component architecture"
+       width="680"/>
+</p>
+</details>
+
+- **Data-driven rendering**: Pass an array of items, and the component handles mapping severities to styling.
+- **Single DOM node**: Replaces the need to conditionally render multiple toast components across your app.
+- **WBC Native**: Acts as a perfect plugin within the `@wbc-ui/core2` tree for reactive error states.
 
 ---
 
